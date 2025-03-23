@@ -5,7 +5,7 @@ function solve() {
 
     let currentStop = { currentId: 'depot'};
 
-    async function depart() {
+    function depart() {
         const url = `https://http-rest-b17ec-default-rtdb.firebaseio.com/busSchedule/schedule/${currentStop.currentId}.json`;
 
         fetch(url)
