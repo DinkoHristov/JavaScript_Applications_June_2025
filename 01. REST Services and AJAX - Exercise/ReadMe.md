@@ -20,17 +20,17 @@ Place the name property as text inside the div with ID **'stopName'** and each b
 
 Replace all highlighted parts with the relevant value from the response. If the request is not successful, or the information is not in the expected format, display **"Error"** as **stopName** and nothing in the list. The list should be cleared before every request is sent.
 ### **Examples**
-![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.001.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.002.png)
+![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.001.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.002.png)
 
 When the button is clicked, the results are displayed in the corresponding elements:
 
-![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.003.png)
+![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.003.png)
 
-![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.004.png)
+![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.004.png)
 
 If an error occurs, the stop name changes to Error:
 
-![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.005.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.006.png)
+![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.005.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.006.png)
 ### **Hints**
 The webhost will respond with valid data to IDs 1287, 1308, 1327 and 2334.
 1. ## **Bus Schedule**
@@ -60,17 +60,17 @@ Clicking the buttons successfully will cycle through the entire schedule. If inv
 ### **Examples**
 Initially, the info box shows “Not Connected” and the arrive button is disabled.
 
-![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.007.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.008.png)
+![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.007.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.008.png)
 
-When Depart is clicked, a request is made with the first ID. The info box is updated with the new information and the buttons are changed: ![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.009.png)
+When Depart is clicked, a request is made with the first ID. The info box is updated with the new information and the buttons are changed: ![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.009.png)
 
-![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.010.png)
+![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.010.png)
 
 Clicking Arrive, changes the info box and swaps the buttons. This allows Depart to be clicked again, which makes a new request and updates the information:
 
-![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.011.png)
+![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.011.png)
 
-![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.012.png)
+![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.012.png)
 1. ## **Phonebook**
 Write a JS program that can load, create and delete entries from a Phonebook. You will be given an HTML template to which you must bind the needed functionality. 
 
@@ -91,20 +91,20 @@ The data sent on a **POST** request should be a valid JSON object, containing pr
 
 The **url** to which your program should make requests is:
 
-**'https://phonebook-nakov.firebaseio.com/phonebook'**
+**'** **https://http-rest-b17ec-default-rtdb.firebaseio.com/phonebook/phonebook'**
 
-**GET** and **POST** requests should go to **https://phonebook-nakov.firebaseio.com/phonebook.json**, while **DELETE** requests should go to **https://phonebook-nakov.firebaseio.com/phonebook/<key>.json** , where **<key>** is the unique key of the entry (you can find out the **key** from the key property in the **GET** request)
+**GET** and **POST** requests should go to **https://http-rest-b17ec-default-rtdb.firebaseio.com/phonebook/phonebook.json**, while **DELETE** requests should go to **https://http-rest-b17ec-default-rtdb.firebaseio.com/phonebook/phonebook/${key}.json**, where **<key>** is the unique key of the entry (you can find out the **key** from the key property in the **GET** request)
 ### **Screenshots:**
-![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.013.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.014.png)
+![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.013.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.014.png)
 
 
 1. ## **Messenger**
 Write a JS program that records and displays messages. The user can post a message, supplying a name and content and retrieve all currently recorded messages.
 Use the skeleton from the provided resources
 
-**Firebase url** for the requests - <https://rest-messanger.firebaseio.com/messanger>
+**Firebase url** for the requests - [http-rest-b17ec-default-rtdb.firebaseio.com/messenger/messenger](https://http-rest-b17ec-default-rtdb.firebaseio.com/messenger/messenger.json)
 
-When [**Send**] **button** is clicked you should create a **new** **object** and send a **post** **request** to the firebase url. Use the following message structure:
+When [**Send**] **button** is clicked you should create a **new** **object** and send a **post** **request** to the firebase url. If the post method is successful [**Refresh**] will be applied to the textarea.(**Refresh button will be clicked via code**). Use the following message structure:
 
 **{**
 
@@ -116,22 +116,22 @@ When [**Send**] **button** is clicked you should create a **new** **object** and
 
 The key associated with each message object is not important - when making a **POST** request with the message object as parameter, Firebase will automatically assign a random key.
 
-![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.015.png)
+![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.015.png)
 
 If you click over [**Refresh**] **button** you should **get all** messages with **GET** **request** and display them into the textarea. Use the following message format:
 "**{author}: {message}**"
 ### **Examples**
-![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.016.png)
+![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.016.png)
 
-![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.017.png)
-
-
+![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.017.png)
 
 
 
 
-![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.020.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.021.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.022.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.023.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.024.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.025.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.026.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.027.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.028.png)
 
 
-![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.018.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.019.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.029.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.030.png)![](Aspose.Words.0cd234bd-21aa-410d-bebc-e3d68f798948.031.png)
+![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.020.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.021.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.022.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.023.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.024.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.025.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.026.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.027.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.028.png)
+
+
+![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.018.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.019.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.029.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.030.png)![](Aspose.Words.5e862972-12ca-4041-b742-d6f47257f7aa.031.png)
 
