@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" placeholder="Book title...">
+
+        <label for="author">Author</label>
+        <input type="text" id="author" name="author" placeholder="Book author...">
+        
+        <input id="createBook" type="submit" value="Create Book">
+    </form>
+
+    <div id="books-container">
+        <h1>Books: <button id="loadBooks">Load All Books</button></h1>
+        <ul id="books"></ul>
+    </div>
+
+    <div id="selected-book">
+        <h1>Find book:</h1>
+
+        <label for="title">Title</label>
+        <input type="text" id="find-title" name="title" placeholder="Book title...">
+
+        <ul id="found-book"></ul>
+    </div>
+
+    <script src="firebase.js" type="module"></script>
+    <script src="books.js"></script>
+</body>
+</html>
