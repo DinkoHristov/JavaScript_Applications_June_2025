@@ -4,3 +4,4 @@ This repository is solutions of problems from my SoftUni course: JS Applications
 2. Asynchronous Programming - Lab
 3. Asynchronous Programming - Exercise
 4. Remote Databases - Lab
+5. Data and Authentication - Exercise
