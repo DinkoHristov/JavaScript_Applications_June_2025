@@ -6,3 +6,5 @@ This repository is solutions of problems from my SoftUni course: JS Applications
 4. Remote Databases - Lab
 5. Data and Authentication - Exercise
 6. Templating - Lab
+7. Templating - Exercise
+8. Single Page Applications - Exercise
