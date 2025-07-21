@@ -10,3 +10,4 @@ This repository is solutions of problems from my SoftUni course: JS Applications
 8. Single Page Applications - Exercise
 9. Architecture and Testing - Exercise
 10. Client Side Rendering - Exercise
+11. Routing - Exercise
