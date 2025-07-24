@@ -12,3 +12,4 @@ This repository is solutions of problems from my SoftUni course: JS Applications
 10. Client Side Rendering - Exercise
 11. Routing - Exercise
 12. Drone-Deals
+13. Show Share
