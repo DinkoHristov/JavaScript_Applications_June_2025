@@ -13,3 +13,4 @@ This repository is solutions of problems from my SoftUni course: JS Applications
 11. Routing - Exercise
 12. Drone-Deals
 13. Show Share
+14. RenewTech Cleanup
