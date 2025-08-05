@@ -16,3 +16,4 @@ This repository is solutions of problems from my SoftUni course: JS Applications
 14. RenewTech Cleanup
 15. Samurider
 16. Fruitipedia
+17. Eventer
