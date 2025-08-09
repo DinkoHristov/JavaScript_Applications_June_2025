@@ -17,3 +17,5 @@ This repository is solutions of problems from my SoftUni course: JS Applications
 15. Samurider
 16. Fruitipedia
 17. Eventer
+18. Cosmetic Kingdom
+JS Applications Regular Exam - 9 August 2025
